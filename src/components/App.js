@@ -55,10 +55,10 @@ const App = () => {
     <div>
       {/* Do not remove the main div */}
       <p>{formattedTime(time)}</p>
-      <button onClick={startTime} disabled={isRunning} >Start</button>
-      <button onClick={stopTime} disabled={!isRunning}>Stop</button>
-      <button onClick={lapsTime} disabled={!isRunning}>Lap</button>
-      <button onClick={resetTime} disabled={isRunning}>Reset</button>
+      <button onClick={startTime} >Start</button>
+      <button onClick={stopTime} >Stop</button>
+      <button onClick={lapsTime} >Lap</button>
+      <button onClick={resetTime}>Reset</button>
       <ul>
         {laps.map((lap, index) => (
           <li key={index}>{formattedTime(lap)}</li>
